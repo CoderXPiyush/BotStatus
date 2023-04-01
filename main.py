@@ -54,7 +54,7 @@ async def main():
             bg = changeImageSize(1300, 2000, bg)
             # font = ImageFont.load_default()
             font = ImageFont.truetype("stuff/fonts/arial.ttf", 60)
-            xxx_tg = f"📊 **<u>LIVE BOT STATUS @NACBOTS</u>**\n\n**💬 {CHANNEL_OR_GROUP_TYPE}**: {CHANNEL_OR_GROUP_NAME}"
+            xxx_tg = f"📊 **<u>LIVE BOT STATUS @PiyushMalviyaOfficially</u>**\n\n**💬 {CHANNEL_OR_GROUP_TYPE}**: {CHANNEL_OR_GROUP_NAME}"
             for bot in BOT_LIST:
                 try:
                     yyy_tg = await app.send_message(bot, "/start")
@@ -95,7 +95,7 @@ async def main():
             time = datetime.datetime.now(pytz.timezone(f"{TIME_ZONE}"))
 
             last_update = time.strftime(f"%d %b %Y at %I:%M %p")
-            xxx_tg += f"\n\n✔️ Last updated on: {last_update} ({TIME_ZONE})\n\n<i>⇋ Updates every 45min - Powered by @NACBots</i>"
+            xxx_tg += f"\n\n✔️ Last updated on: {last_update} ({TIME_ZONE})\n\n<i>⇋ Updates every 45min - Powered by @PiyushMalviyaOfficially</i>"
             bg.save("md.jpg")
             await app.edit_message_media(
                 CHANNEL_OR_GROUP_ID,
